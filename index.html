@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>משחק הניחושים - איפה התמונה?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>משחק הניחושים – איפה התמונה?</h1>
+
+        <section class="rules">
+            <h2>כללי המשחק</h2>
+            <ol>
+                <li>במשחק יש 9 ריבועים (3×3).</li>
+                <li>התמונה מסתתרת באחד הריבועים, ובתחילת כל משחק המחשב בוחר ריבוע חדש באקראי.</li>
+                <li>בכל תור בוחרים ריבוע ולוחצים עליו כדי לנחש.</li>
+                <li>אם ניחשת נכון – התמונה נחשפת, ומופיעה הודעה שמציגה אחרי כמה ניחושים הצלחת.</li>
+                <li>אם ניחשת לא נכון – הריבוע יסומן כניסיון, וניתן להמשיך לנחש.</li>
+                <li>אם לא מתבצע מהלך במשך 30 שניות, מופיעה הודעת <strong>you loose</strong> והמחשב מנצח והמשחק מתחיל מחדש.</li>
+                <li>אפשר בכל רגע להתחיל משחק חדש בעזרת הכפתור "משחק חדש".</li>
+            </ol>
+        </section>
+
+        <div class="status-panel">
+            <p id="status-message">לחץ על אחד הריבועים כדי לנחש איפה התמונה.</p>
+            <p id="guesses-counter">מספר ניחושים: 0</p>
+            <button id="new-game-btn">משחק חדש</button>
+        </div>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div class="hint">
+            <p>
+                אפשר להחליף את התמונה במשחק בקובץ <code>script.js</code> לשם של תמונה משלך.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
